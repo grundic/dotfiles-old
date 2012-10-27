@@ -5,6 +5,6 @@ CURRENT_DIR="$(readlink -f $(dirname $0))"
 echo ------------------------------------
 echo Installation script for dotfiles
 
-ln -s "${CURRENT_DIR}/vim/.vimrc" "/home/${USER}/.vimrc" -f
-ln -s "${CURRENT_DIR}/vim/" "/home/${USER}/.vim" -f
+ln -s "${CURRENT_DIR}/vim/.vimrc" "${HOME}/.vimrc" -f
+ln -s "${CURRENT_DIR}/vim/" "${HOME}/.vim" -f
 
