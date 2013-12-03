@@ -11,7 +11,7 @@ if [ -f ${manualfile} ]; then
 else
   # Get list of files to link
   includes=".vim .zsh"
-  excludes="\.git(ignore|modules)"
+  excludes="\.git(ignore|modules)|\.swp"
   base="$(find . -maxdepth 1 -name '.*' -not -name '.*.local' -type f | sed 's#^\./##' | grep -vE ${excludes})"
   files="${base} ${includes}"
 fi
