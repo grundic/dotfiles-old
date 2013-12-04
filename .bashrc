@@ -37,6 +37,8 @@ include_d bash_completion
 # Global bash configuration section
 ################################################################################
 
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
 
@@ -78,3 +80,5 @@ CLICOLOR=1
 LSCOLORS=gxgxcxdxbxegedabagacad
 
 export CLICOLOR LSCOLORS
+
+eval `gdircolors ${MYDIR}/.bash-lib/dircolors-solarized/dircolors.ansi-dark`
