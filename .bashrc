@@ -37,7 +37,14 @@ include_d bash_completion
 # Global bash configuration section
 ################################################################################
 
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+# PATH configuration
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+  :
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+  PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+elif [[ "$OSTYPE" == "cygwin" ]]; then
+  :
+fi
 
 # don't put duplicate lines or lines starting with space in the history.
 HISTCONTROL=ignoreboth
