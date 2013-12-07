@@ -1,9 +1,3 @@
-[submodule "tmux-config"]
-	path = tmux-config
-	url = git@github.com:grundic/tmux-config.git
-[submodule "vim"]
-	path = vim
-	url = git@github.com:grundic/dotvim.git
 [submodule ".bash-lib/dircolors-solarized"]
 	path = .bash-lib/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
