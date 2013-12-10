@@ -17,4 +17,4 @@ Bundle 'altercation/vim-colors-solarized.git'
 filetype plugin indent on
 
 " Source initialization files
-runtime! .vim-lib/**.vim
+runtime! init/**.vim
