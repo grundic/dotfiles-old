@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 " Custom bundles
 Bundle 'altercation/vim-colors-solarized.git'
 Bundle 'tpope/vim-fugitive.git'
+Bundle 'kien/ctrlp.vim'
 
 
 filetype plugin indent on
